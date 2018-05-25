@@ -1,0 +1,39 @@
+section #message{
+    width: 980px;
+    background: white;
+    height: 680px;
+    position: relative;
+    z-index: -999;
+    margin-top: 20px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 1px 5px black;
+}
+
+
+
+section #message .msgcontent{
+    position: absolute;
+    /* top: 70px; */
+    left: 100px;
+    width: 80%;
+    /* border-radius: 20px 20px 20px 20px; */
+    height: 60px;
+    /* background: pink; */
+    text-align: center;
+    top: 2px;
+}
+section #message .msgcontent th{
+    /* border: 1px solid red; */
+    border-radius: 20px 20px 0 0;
+    background:pink;
+}
+section #message .msgcontent td{
+    /* border: 1px solid red; */
+    background: rgb(138, 211, 233);
+    height: 30px;
+}
+
+section #message .msgcontent .bottom th{
+    height: 20px;
+    border-radius: 0 0 20px 20px;
+}

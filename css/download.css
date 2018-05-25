@@ -1,0 +1,38 @@
+.download{
+    width: 100%;
+    margin-top: 10px;
+    /* border: 1px solid red; */
+    padding: 10px;
+    height: 630px;
+}
+
+ .download ul{
+    list-style-type: none;
+    margin: 20px;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+    background: rgb(230, 225, 225);
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+}
+.download li a{
+    text-decoration: none;
+    color:black;
+    background-color: transparent;
+}
+.download li a:visited {
+color: #456;
+border-color: #456;
+background-color: transparent;
+}
+.download li a:hover {
+    color: cornflowerblue;
+border-color: #966;
+background-color: transparent;
+}
+.download li a:active {
+color: #876;
+border-color: #876;
+background-color: transparent;
+}

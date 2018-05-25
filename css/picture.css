@@ -1,0 +1,39 @@
+/*picture area */
+section#picture_area{
+	clear: both;
+	overflow: hidden;
+	width: 980px;
+	/* background: blue; */
+	margin-top: 20px;
+	/* border-radius:20px 0px 20px 0px;
+	border:1px solid #f58c21; */
+	border-radius: 20px 20px 20px 20px;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+	box-shadow: 1px 0px 5px #888888;
+	background:#efefef;
+}
+section#picture_area article{
+	width: 323px;
+	float: left;
+	overflow: hidden;
+	/* background: white; */
+	/* background:black; */
+	/* margin-left: 10px; */
+}
+section#picture_area .inner{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+section#picture_area a img{
+	width: 300px;
+	height: 300px;
+	/* margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 5px; */
+	margin: 10px;
+	/* background: beige; */
+	/* float: left; */
+	border-radius: 20px;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+	box-shadow: 1px 1px 5px #888888;
+}

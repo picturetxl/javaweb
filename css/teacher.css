@@ -1,0 +1,194 @@
+* {margin:0; padding:0;}
+body{
+	background:#efefef;
+}
+#wrapper {
+	width:980px;
+	margin:0 auto 20px;
+	/* border: 1px solid red; */
+}
+/* header 设为相对定位 为子元素提供定位上下文 */
+header{
+	display: block;
+    height: 70px;
+    background-color: #f3f0ed;
+	/* border: 1px solid blue; */
+	border-radius: 20px 0 20px 0;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+	box-shadow: 1px 1px 5px #888888;
+}
+/* 设置header子元素的样式 */
+header h1 {
+	padding:9px 12px 0;
+	font-family:Lato, helvetica, sans-serif;
+	font-style:normal;
+	font-weight:900;
+	font-size:2.2em;
+	line-height:1;
+	letter-spacing:-.025em;
+    color:#0c0d0e;
+    display: inline;
+}
+header h5{
+    display: inline;
+}
+
+/* /***************************************** */
+/* 设置nav menu的位置 */
+header nav.menu{
+	/* text-align:center; */
+    /* margin-left: 200px; */
+    margin-left: 250px;
+	margin-top: 10px;
+}
+/* drop_menu */
+.menu *{
+	margin: 0;
+	padding: 0;
+}
+  /* 让所有主菜单和子菜单浮动 */
+.menu ul{
+	float: left;
+}
+/* 配合父元素ul让其浮动 清除列表样式 为子菜单提供定位上下文 */
+.menu li{
+	float: left;
+	position: relative;
+}
+/* 为所有链接清除下划线 并填充列表项 */
+.menu li a{
+	/* 让链接填充列表项 为了点击方便 */
+	display: block;
+	/* 背景只出现在内边距区域 */
+	background-clip:padding-box;
+}
+/* 暂时隐藏子菜单 */
+.menu li ul{
+	display: none;
+}
+/* 二级菜单li ul */
+.menu li ul{
+	display: block;
+	position: absolute;
+}
+/* 清除二级菜单的浮动 */
+.menu li li{
+	float: none;
+}
+/* 隐藏二级菜单 */
+.menu li ul{
+	display: none;
+	left: 0;/*与父菜单左对齐*/
+	top: 100%;/*子菜单的顶部与父菜单底部对齐*/
+}
+/* 设置鼠标悬浮 */
+.menu li:hover> ul{ /*注意要将冒号紧贴着li*/
+	display: block;
+}
+/* 设置菜单样式 */
+.menu li{
+	list-style-type: none;
+}
+.menu li a{
+	text-decoration: none;
+	font-weight:400;
+	padding:1px 3px;
+	color: #fff;
+}
+nav.menu li.p1 a {
+    background:#4eb8ea;
+	border-radius: 10px 0 0 0;
+}
+nav.menu li.p2 a {
+    background:black;
+}
+nav.menu li.p3 a {
+	background:#d6e636;
+	}
+nav.menu li.p4 a {
+	background:#ee4c98;
+	}
+nav.menu li.p5 a {
+	background: turquoise;
+	border-radius: 0px 0 10px 0px;
+	}
+nav.menu li:hover > a {
+	color:#555;
+	border-color:#fff;
+	border:0;
+}
+
+#tableinfo{
+	width: 980px;
+	height: 680px;
+	margin-top: 20px;
+	border: 2px solid rgb(194, 185, 185);
+	border-radius: 20px  0px 20px 0px;
+	box-shadow: 2px 2px 10px grey;
+}
+
+
+#middle{
+	margin-top: 20px;
+	border-radius: 10px 0 10px 0;
+	box-shadow: 0 2px 5px black;
+	width: 380px;
+	margin-left: 250px;
+	padding: 20px;
+}
+
+#middle table th{
+	border: 2px solid black;
+}
+#middle table td{
+	border: 1px solid grey;
+}
+#feature_area{
+	width: 980px;
+	height: 680px;
+	margin-top: 10px;
+	/* border: 1px solid rebeccapurple; */
+	/* background: papayawhip; */
+	background-color: #f3f0ed;
+	box-shadow: 1px 1px 5px #888888;
+	border-radius: 20px 20px 20px 20px;
+}
+#message{
+	/* border-radius: 10px 0 10px 0; */
+	width: 500px;
+	padding: 20px;
+	margin-left: 250px;
+
+}
+#message form{
+	background: papayawhip;
+	margin-top: 20px;
+	border-radius: 20px 0 20px 0;
+	box-shadow: 0px 2px 2px black;
+	padding: 20px;
+
+}
+#message form input{
+	border-radius: 10px 0 10px 0;
+	height: 25px;
+	outline: none
+}
+#message textarea{
+	position: relative;
+	right: 200px;
+	width:300px;
+	border-radius: 20px 0 20px 0;
+	display: block;
+	outline: none
+}
+
+#message form button{
+	outline: none;
+	height: 30px;
+	width: 50px;
+	border: 0;
+	background:black;
+	color:white;
+	border-radius: 15px 0 15px 0;
+	margin-left: 250px;
+}

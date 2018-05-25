@@ -1,0 +1,78 @@
+
+.all{
+    width: 980px;
+    height: 680px;
+    /* background: red; */
+    margin-top:20px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 2px 5px black;
+    position: relative;
+}
+
+.download{
+    background:pink;
+    width: 250px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 3px 5px rgb(165, 161, 161);
+}
+.download ul{
+    list-style-type: none;
+}
+.download a{
+    text-decoration: none;
+    color: black;
+    margin-left: 5px;
+}
+.download a:hover{
+    color:white;
+    font-size: 20px;
+}
+.download span{
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.upload{
+    position: relative;
+    top: 20px;
+    left: 320px;
+    background: rgb(142, 203, 238);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 1px 3px 5px rgb(165, 161, 161);
+    width: 400px;
+    height: 80px;
+}
+.upload span{
+    font-size: 20px;
+    padding-left: 5px;
+}
+.upload form{
+    /* background: blue; */
+    margin-left: 5px;
+}
+.upload input[type="file"]{
+    border: none;
+    color: olive;
+    font-size: 10px;
+    /* background: mediumvioletred; */
+    padding-left: 5px;
+    border-radius: 20px 20px 20px 20px;
+    cursor: pointer;
+}
+.upload input[type="submit"]{
+    border: none;
+    font-size: 20px;
+    border-radius: 20px 20px 20px 20px;
+    padding: 3px;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+}
+.upload input[type="submit"]:hover{
+    color: orange;
+}
+
+

@@ -1,0 +1,133 @@
+
+
+.information{
+    width: 980px;
+    height: 630px;
+    margin-top: 10px;
+    background: white;
+    padding-top:20px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 1px 5px black;
+}
+
+.information table{
+    /* background: aquamarine; */
+    margin-left: 90px;
+    margin-top: 20px;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+
+.information table tr{
+    background: antiquewhite;
+    height: 15px;
+    border: 1px solid black;
+}
+.information table tr th{
+    border-right: 1px solid black;
+    padding:2px;
+}
+.information table tr td{
+    border-right: 1px solid black;
+    padding:2px;
+}
+#addwrap{
+    width: 980px;
+    height: 680px;
+    margin-top: 10px;
+    background: white;
+    font-size: 17px;
+    /* position: relative;
+    z-index: -2; */
+}
+#addep{
+    position: relative;
+    /* z-index: -1; */
+    width: 420px;
+    background: blanchedalmond;
+    top:50px;
+    left:300px;
+    height: 430px;
+    border-radius: 20px 0 20px 0;
+}
+#addep form{
+    padding: 20px;
+}
+
+#addep form input[type="text"]{
+    height: 20px;
+    border-radius: 10px 0 10px 0;
+    margin-top: 7px;
+    outline: none;
+}
+
+#addep form input[type="submit"]{
+    height: 30px;
+    width: 50px;
+    border: 0;
+    background: rgb(84, 230, 198);
+    font-size: 15px;
+    border-radius: 10px 0 10px 0;
+    margin-top: 18px;
+    margin-left: 200px;
+}
+
+#addep form input[type="reset"]{
+    height: 30px;
+    width: 50px;
+    border: 0;
+    background: rgb(224, 74, 74);
+    font-size: 15px;
+    border-radius: 10px 0 10px 0;
+    margin-top: 5px;
+    margin-left: 7px;
+    color: white;
+}
+
+.equipment{
+    width: 980px;
+    background: white;
+    height: 680px;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 0 1px 5px black;
+}
+.equipment table {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.equipment table tr th{
+    /* background: bisque; */
+    border:2px solid black;
+    /* padding: 2px; */
+    background: snow;
+}
+
+.equipment table tr td{
+    /* background: bisque; */
+    border:2px solid black;
+    padding: 1px;
+}
+
+.equipment table a{
+    text-decoration: none;
+}
+.deleteicon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: orangered;
+    text-align: center;
+}
+.deleteicon:first-child{
+    margin-left: 25%;
+}
+
+

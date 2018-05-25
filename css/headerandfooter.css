@@ -1,0 +1,206 @@
+* {margin:0; padding:0;}
+body{
+	background:#efefef;
+}
+#wrapper {
+	width:980px;
+	margin:0 auto 20px;
+	/* border: 1px solid red; */
+}
+/* header 设为相对定位 为子元素提供定位上下文 */
+header{
+	position: relative;
+	display: block;
+	height: 70px;
+	/* border: 1px solid blue; */
+	border-radius: 20px 0 20px 0;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+	box-shadow: 1px 1px 5px #888888;
+}
+/* 设置header子元素的样式 */
+header h1 {
+	padding:9px 12px 0;
+	font-family:Lato, helvetica, sans-serif;
+	font-style:normal;
+	font-weight:900;
+	font-size:2.2em;
+	line-height:1;
+	letter-spacing:-.025em;
+	color:#0c0d0e;
+}
+header h2 {
+	font-family:"Source Sans Pro", helvetica, sans-serif;
+	font-style:normal;
+	font-weight:400;
+	font-size:.9em;
+	color:#333;
+	padding:0px 12px;
+	line-height:1;
+	letter-spacing:-.025em;
+}
+
+/*******************************************/
+/* 设置title的位置 */
+header section#title{
+	position:absolute;
+	width: 300px;
+	height: 65px;
+	left:0px;
+	top:0px;
+	/* background-color: aquamarine; */
+}
+
+/*******************************************/
+/* 设置nav menu的位置 */
+header nav.menu{
+	text-align:center;
+	margin-left: 300px;
+	padding-top: 30px;
+}
+/* drop_menu */
+.menu *{
+	margin: 0;
+	padding: 0;
+}
+  /* 让所有主菜单和子菜单浮动 */
+.menu ul{
+	float: left;
+}
+/* 配合父元素ul让其浮动 清除列表样式 为子菜单提供定位上下文 */
+.menu li{
+	float: left;
+	position: relative;
+}
+/* 为所有链接清除下划线 并填充列表项 */
+.menu li a{
+	/* 让链接填充列表项 为了点击方便 */
+	display: block;
+	/* 背景只出现在内边距区域 */
+	background-clip:padding-box;
+}
+/* 暂时隐藏子菜单 */
+.menu li ul{
+	display: none;
+}
+/* 二级菜单li ul */
+.menu li ul{
+	display: block;
+	position: absolute;
+}
+/* 清除二级菜单的浮动 */
+.menu li li{
+	float: none;
+}
+/* 隐藏二级菜单 */
+.menu li ul{
+	display: none;
+	left: 0;/*与父菜单左对齐*/
+	top: 100%;/*子菜单的顶部与父菜单底部对齐*/
+}
+/* 设置鼠标悬浮 */
+.menu li:hover> ul{ /*注意要将冒号紧贴着li*/
+	display: block;
+}
+/* 设置菜单样式 */
+.menu li{
+	list-style-type: none;
+}
+.menu li a{
+	text-decoration: none;
+	font-weight:400;
+	padding:1px 3px;
+	color: #fff;
+}
+nav.menu li.p1 a {
+	background:black;
+	border-radius: 10px 0 0 10px;
+	}
+nav.menu li.p2 a {
+	background:#4eb8ea;
+	}
+nav.menu li.p3 a {
+	background:#d6e636;
+	}
+nav.menu li.p4 a {
+	background:#ee4c98;
+	}
+nav.menu li.p5 a {
+	background:#f58c21;
+	border-radius: 0px 10px 10px 0px;
+	}
+nav.menu li.p6 a {
+	background:#2533f5;
+	border-radius: 0px 10px 10px 0px;
+	}
+nav.menu li:hover > a {
+	color:#555;
+	border-color:#fff;
+	border:0;
+}
+
+/*******************************************/
+/* 设置form search的位置 */
+form.search {
+	position:absolute;
+	width:150px;
+	right:20px; /*相对于header右20px */
+	top:23px;
+	/* background-color: blueviolet; */
+}
+/* 设置搜索框的效果 */
+.search input {
+	float:right;/*置于form的右边*/
+	width:70px;
+	padding:2px 0 3px 5px;
+	border-radius:10px 0px 10px 0px;
+	color:#888;
+	outline:none;/*清除input的默认的外边框*/
+	-webkit-transition:2s width ease-in;
+}
+.search input:focus {
+	width:140px;
+}
+.search label{
+	display:none;/*将search 隐藏*/
+}
+form.search input {
+	background-color:#FFF;
+}
+form.search input::-webkit-input-placeholder {
+	color:#ccc;
+}
+
+
+
+footer{
+	overflow: hidden;
+	/* border: 1px solid red; */
+	border-radius: 0 0 20px 20px;
+	/* box-shadow: h-shadow v-shadow blur spread color inset; */
+	box-shadow: 0px 2px 5px #888888;
+	margin-top: 20px;
+}
+footer ul{
+	margin-top: 6px;
+}
+footer li{
+	float: left;
+	height: 30px;
+	list-style-type: none;
+}
+footer ul:first-child{
+	margin-left: 30%;
+}
+footer li a{
+	border-right: 1px solid black;
+	margin: 2px;
+	padding-right: 5px;
+	text-decoration: none;
+}
+/*ul 和 last-child 要空格*/
+footer ul :last-child a{
+	border-right: none;
+}
+footer a:hover {
+	color:#777;
+}
