@@ -11,7 +11,7 @@ public class MysqlJavaBean {
     private String driverName="com.mysql.cj.jdbc.Driver";
     private String url="jdbc:mysql://localhost:3306/myweb2?serverTimezone=GMT%2B8&useSSL=true";
     private String user="root";
-    private String password="********";
+    private String password="thll1tl2dl";
     private Connection connection=null;
     private Statement statement=null;
     private ResultSet resultset=null;
@@ -582,6 +582,23 @@ public class MysqlJavaBean {
     {
         try {
             String sql="select * from techer";
+            statement=getStmt();
+            return statement.executeQuery(sql);
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
+    }
+    /**
+     *demonstrate:
+     *	查询供货商信息
+     *author:john
+     *email:txltech123@163.com
+     */
+    public ResultSet querysupplier()
+    {
+        try {
+            String sql="select * from supplier";
             statement=getStmt();
             return statement.executeQuery(sql);
         } catch (Exception e) {

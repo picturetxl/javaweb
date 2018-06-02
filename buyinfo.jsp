@@ -29,7 +29,7 @@
                         <li class="p1"><a href="EquipmentServlet">设备总览</a>
                             <ul>
                                 <li><a href="addequip.html">添加设备</a></li>
-                                <li><a href="">供货商信息</a></li>
+                                 <li><a href="SupplierServlet">供货商信息</a></li>
                             </ul>
                         </li>
                         <li class="p2"><a href="admessage.jsp">留言板</a></li>

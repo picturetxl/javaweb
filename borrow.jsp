@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/arrow.png">
-    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="stylesheet" href="css/teacherheader.css">
+    <link rel="stylesheet" href="css/borrow.css">
     <base href="<%=basePath%>">
     <title>Teacher</title>
 </head>
@@ -25,16 +26,16 @@
             <h1>Teacher</h1>
             <h5>welcome <%=userName%>teacher</h5>
         </section>
-        <nav class="menu">
+       <nav class="menu">
             <ul>
-                <li class="p1"><a href="">常见操作</a>
+                <li class="p1"><a href="#">常见操作</a>
                     <ul>
-                        <li>  <a href="BorrowServlet?username=<%=userName %>">已借情况</a></li>
+                        <li><a href="BorrowServlet?username=<%=userName %>" >已借情况</a></li>
                         <li><a href="download.jsp">资料下载</a></li>
                     </ul>
                 </li>
                 <li class="p2"><a href="ReminderServlet">可借设备</a></li>
-                <li class="p3"><a href="">留言板块</a></li>
+                <li class="p3"><a href="message.jsp">留言板块</a></li>
                 <li class="p4"><a href="">校园官网</a></li>
                 <li class="p5"><a href="">项目公告</a>
                     <ul>
@@ -45,9 +46,8 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <article>
-            <div id="middle">
+    <section id="feature_area">
+        <article id="borrow">
                 <%
                     ArrayList<Borrow> borrowList = (ArrayList)session.getAttribute("BorrowList");
                     if(borrowList != null)
@@ -56,7 +56,7 @@
                 已借设备：<font>
                 <%=borrowList.size() %>
                  </font>
-                <table>
+                <table id="table">
                     <tr>
                         <th>设备号</th>
                         <th>设备名</th>
@@ -83,15 +83,8 @@
                         }
                     %>
                 </table>
-            </div>
         </article>
     </section>
-    <section id="picture_area">
-
-    </section>
-    <footer>
-
-    </footer>
 </div>
 </body>
 </html>

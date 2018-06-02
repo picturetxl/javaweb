@@ -9,9 +9,9 @@ body{
 }
 /* header 设为相对定位 为子元素提供定位上下文 */
 header{
+	position: relative;
 	display: block;
-    height: 70px;
-    background-color: #f3f0ed;
+	height: 70px;
 	/* border: 1px solid blue; */
 	border-radius: 20px 0 20px 0;
 	/* box-shadow: h-shadow v-shadow blur spread color inset; */
@@ -26,20 +26,35 @@ header h1 {
 	font-size:2.2em;
 	line-height:1;
 	letter-spacing:-.025em;
-    color:#0c0d0e;
-    display: inline;
+	color:#0c0d0e;
 }
-header h5{
-    display: inline;
+header h5 {
+	font-style:normal;
+	font-weight:400;
+	font-size:.9em;
+	color:#333;
+	padding:0px 12px;
+	line-height:1;
+	letter-spacing:-.025em;
 }
 
-/* /***************************************** */
+/*******************************************/
+/* 设置title的位置 */
+header section#title{
+	position:absolute;
+	width: 300px;
+	height: 65px;
+	left:5px;
+	top:0px;
+	/* background-color: aquamarine; */
+}
+
+/*******************************************/
 /* 设置nav menu的位置 */
 header nav.menu{
-	/* text-align:center; */
-    /* margin-left: 200px; */
-    margin-left: 250px;
-	margin-top: 10px;
+	text-align:center;
+	margin-left: 300px;
+	padding-top: 30px;
 }
 /* drop_menu */
 .menu *{
@@ -96,12 +111,12 @@ header nav.menu{
 	color: #fff;
 }
 nav.menu li.p1 a {
-    background:#4eb8ea;
-	border-radius: 10px 0 0 0;
-}
+	background:black;
+	border-radius: 10px 0 0 10px;
+	}
 nav.menu li.p2 a {
-    background:black;
-}
+	background:#4eb8ea;
+	}
 nav.menu li.p3 a {
 	background:#d6e636;
 	}
@@ -109,8 +124,12 @@ nav.menu li.p4 a {
 	background:#ee4c98;
 	}
 nav.menu li.p5 a {
-	background: turquoise;
-	border-radius: 0px 0 10px 0px;
+	background:#f58c21;
+	border-radius: 0px 10px 10px 0px;
+	}
+nav.menu li.p6 a {
+	background:#2533f5;
+	border-radius: 0px 10px 10px 0px;
 	}
 nav.menu li:hover > a {
 	color:#555;
@@ -118,77 +137,14 @@ nav.menu li:hover > a {
 	border:0;
 }
 
-#tableinfo{
-	width: 980px;
-	height: 680px;
-	margin-top: 20px;
-	border: 2px solid rgb(194, 185, 185);
-	border-radius: 20px  0px 20px 0px;
-	box-shadow: 2px 2px 10px grey;
-}
 
-
-#middle{
-	margin-top: 20px;
-	border-radius: 10px 0 10px 0;
-	box-shadow: 0 2px 5px black;
-	width: 380px;
-	margin-left: 250px;
-	padding: 20px;
-}
-
-#middle table th{
-	border: 2px solid black;
-}
-#middle table td{
-	border: 1px solid grey;
-}
 #feature_area{
 	width: 980px;
 	height: 680px;
 	margin-top: 10px;
-	/* border: 1px solid rebeccapurple; */
-	/* background: papayawhip; */
-	background-color: #f3f0ed;
-	box-shadow: 1px 1px 5px #888888;
-	border-radius: 20px 20px 20px 20px;
-}
-#message{
-	/* border-radius: 10px 0 10px 0; */
-	width: 500px;
-	padding: 20px;
-	margin-left: 250px;
-
-}
-#message form{
-	background: papayawhip;
-	margin-top: 20px;
 	border-radius: 20px 0 20px 0;
-	box-shadow: 0px 2px 2px black;
-	padding: 20px;
-
-}
-#message form input{
-	border-radius: 10px 0 10px 0;
-	height: 25px;
-	outline: none
-}
-#message textarea{
+	box-shadow: 1px 2px 5px rgb(122, 117, 117);
 	position: relative;
-	right: 200px;
-	width:300px;
-	border-radius: 20px 0 20px 0;
-	display: block;
-	outline: none
 }
 
-#message form button{
-	outline: none;
-	height: 30px;
-	width: 50px;
-	border: 0;
-	background:black;
-	color:white;
-	border-radius: 15px 0 15px 0;
-	margin-left: 250px;
-}
+

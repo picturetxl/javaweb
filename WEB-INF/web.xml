@@ -129,6 +129,14 @@ metadata-complete="true">
     <url-pattern>/TeacherInfoServlet</url-pattern>
 </servlet-mapping>
 
+<servlet>
+    <servlet-name>SupplierServlet</servlet-name>
+    <servlet-class>tailiang.SupplierServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>SupplierServlet</servlet-name>
+    <url-pattern>/SupplierServlet</url-pattern>
+</servlet-mapping>
 
 <session-config>
     <session-timeout>30</session-timeout>

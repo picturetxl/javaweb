@@ -22,6 +22,7 @@
     border-radius: 20px 0 20px 0;
     box-shadow: 0 2px 5px black;
     position: relative;
+    z-index:-1;
 }
     .download{
     background:pink;
@@ -102,7 +103,7 @@
                     <li class="p1"><a href="EquipmentServlet">设备总览</a>
                         <ul>
                             <li><a href="addequip.html">添加设备</a></li>
-                            <li><a href="">供货商信息</a></li>
+                             <li><a href="SupplierServlet">供货商信息</a></li>
                         </ul>
                     </li>
                     <li class="p2"><a href="QueryMessageServlet">查看留言板</a></li>

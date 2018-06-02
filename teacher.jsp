@@ -9,7 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/arrow.png">
-    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="stylesheet" href="css/teacherheader.css">
+    <link rel="stylesheet" href="css/teacherhome.css">
     <base href="<%=basePath%>">
     <title>Teacher</title>
 </head>
@@ -25,7 +26,7 @@
         </section>
         <nav class="menu">
             <ul>
-                <li class="p1"><a href="">常见操作</a>
+                <li class="p1"><a href="#">常见操作</a>
                     <ul>
                         <li><a href="BorrowServlet?username=<%=userName %>" >已借情况</a></li>
                         <li><a href="download.jsp">资料下载</a></li>
@@ -44,11 +45,10 @@
         </nav>
     </header>
     <section id="feature_area">
-        <article id="tableinfo">
+        <article id="notice">
+            <h3>老师需知</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non molestiae et consectetur aliquam reiciendis quibusdam delectus omnis sunt doloremque pariatur, esse, dolorum aut nisi vel magni dolorem, enim repellat sequi?   </p>
         </article>
-
-    </section>
-    <section id="picture_area">
 
     </section>
     <footer>

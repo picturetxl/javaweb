@@ -11,7 +11,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="images/arrow.png">
-    <link rel="stylesheet" href="css/teacher.css">
+    <link rel="stylesheet" href="css/teacherheader.css">
+    <link rel="stylesheet" href="css/remider.css">
     <base href="<%=basePath%>">
     <title>Teacher</title>
 </head>
@@ -25,11 +26,11 @@
             <h1>Teacher</h1>
             <h5>welcome <%=userName%>teacher</h5>
         </section>
-        <nav class="menu">
+         <nav class="menu">
             <ul>
-                <li class="p1"><a href="">常见操作</a>
+                <li class="p1"><a href="#">常见操作</a>
                     <ul>
-                        <li>  <a href="BorrowServlet?username=<%=userName %>" >已借情况</a><br><br></li>
+                        <li><a href="BorrowServlet?username=<%=userName %>" >已借情况</a></li>
                         <li><a href="download.jsp">资料下载</a></li>
                     </ul>
                 </li>
@@ -45,16 +46,15 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <article>
-            <div id="middle">
+    <section id="feature_area">
+        <div id="reminder">
                 <%
                     ArrayList<Reminder> reminderList=(ArrayList)session.getAttribute("reminderList");
                     %>
                     可借设备：<font>
                     <%=reminderList.size() %>
                     </font>
-                    <table>
+                    <table id="table">
                         <tr>
                             <th>设备号</th>
                             <th>设备名</th>
@@ -76,15 +76,8 @@
                             }
                         %>
                         </table>
-            </div>
-        </article>
+        </div>
     </section>
-    <section id="picture_area">
-
-    </section>
-    <footer>
-
-    </footer>
 </div>
 </body>
 </html>
